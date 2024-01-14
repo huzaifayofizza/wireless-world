@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless World</title>
+    <!-- ICON  -->
+    <link rel="ICON" href="IMG/logo.png">
+        <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<!-- ICON CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+
+<style>
+  /* NAVBAR CSS*/
+  .container-fluid {
+      margin-left: 15%;
+    }
+
+    .row {
+      --bs-gutter-x: 0rem;
+
+    }
+
+    .nav-item {
+      font-weight: bolder;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .alert-nav :hover {
+      opacity: 0.8;
+
+
+    }
+
+    .nav-item :hover {
+      opacity: 0.5;
+
+
+    }
+
+    .nav-item .dropdown-menu :hover {
+      opacity: none;
+
+    }
+
+    @media only screen and (min-width:1200px) {
+      .nav-item {
+        margin-left: 35px;
+      }
+    }
+    .nav-link:hover{
+  border-bottom: 1px solid goldenrod;
+}
+.nav-link{
+  transition: all 0.5s;
+  position: relative;  
+}
+
+    /* NAVBAR CSS*/
+
+/*CONTACT FORM*/
+#name
+ {
+            border-radius:4px;
+            box-shadow: black 3px 3px 3px;
+            border-color: rgba(0, 0, 0, 0.522);
+
+        }
+        #phone
+        {
+            border-radius:4px;
+            box-shadow: black 3px 3px 3px;
+            border-color: rgba(0, 0, 0, 0.522);
+        }
+        #email
+        {
+          border-radius:4px;
+            box-shadow: black 3px 3px 3px;
+            border-color: rgba(0, 0, 0, 0.522);
+          }
+        #message
+        {
+          border-radius:4px;
+            box-shadow: black 3px 3px 3px;
+            border-color: rgba(0, 0, 0, 0.522);
+        }
+
+        #btn
+        {
+            box-shadow: black 6px 6px 6px;
+            border-radius:10px;
+            color:white;
+            background: black;
+            font-weight: 1000;
+            font-family: serif;
+            margin-top: 4%;
+            margin-left: 20%;
+            padding: 2%;
+        }
+
+        #btn:hover
+        {
+            box-shadow: 6px 6px 6px #ffc107;
+            border-radius:15px;
+            color:#ffc107 ;
+            font-weight: 1000;
+            font-family: serif;
+        }
+        h1
+        {
+          margin-left:2%; 
+          margin-top:5%;
+          margin-bottom: 17px;
+          font-size:28px;
+        }
+        .line
+        {
+          display:inline-block; 
+          width:200px; 
+          height:2px; 
+          background: black; 
+          margin-left:9%;
+        }
+        label
+        {
+          font-family: serif;
+          text-shadow:solid black 1px;
+          font-weight:600;
+        }
+        em
+        {
+          color: red;
+        }
+         h4
+         {
+           font-weight: 1000;
+           font-family:serif;
+           text-shadow: black solid 10px;
+         }
+          #p1
+          {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          #p2
+          {
+          font-family: serif;
+          font-weight: bold;
+          font-size: 20px;
+          }
+           #p3
+           {
+            font-family:serif; 
+            font-size:20px;
+            font-weight: bold;
+           }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+     
+
+    </style>
+</head>
+<body>
+     <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg  navbar-light bg-dark sticky-top">
+    <div class="container-fluid ">
+      <a href="index.html"><img src="IMG/logo.png" height="60px" alt=""></a>
+
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav ">
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="index.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              Home
+            </a>
+
+          </li>
+          <a class="navbar-brand" style="color: goldenrod;" href="index.html"><i class="bi bi-house-fill"></i></a>
+          <li class="nav-item  dropdown ">
+            <a class="nav-link active dropdown ps-4" style="color: silver;" href="#" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Brands
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold" href="samsung.html">Samsung</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="apple.html">Apple</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="oppo.html">Oppo</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="Motorola.html">Motorola</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="oneplus.html">OnePlus</a></li>
+            </ul>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link ps-4" style="color: silver;" href="gallery.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              Gallery
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="Aboutus.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="contactus.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link ps-4 " style="color: goldenrod;" href="#"><i class="bi bi-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-4" style="color: goldenrod;" href="#"><i class="bi bi-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR -->
+
+      <!--COROUSEL TEXT-->
+
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner mt-3">
+      <div class="carousel-item active">
+        <p  class="d-block w-100 text-center text-dark pt-2 pb-2 " style="  background: goldenrod; font-size: 12px; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">Wireless World</p>
+      </div>
+      <div class="carousel-item">
+        <p  class="d-block  w-100 text-center text-dark pt-2 pb-2" style=" background: goldenrod; font-size: 12px; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >Have A Smartphone & Hold Your Dreams</p>
+      </div>
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div><br><hr>
+
+   <!--COROUSEL TEXT-->
+
+   <div class="header text-center text-dark fw-bold  bg-warning " style="font-size: 40px;">Site Map-Location<br>
+   </div>
+   <hr>
+   <br>
+
+   <!--MAP-->
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1438457798918!2d67.02817851447891!3d24.927169148720758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1673942408340!5m2!1sen!2s" width="1345px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-1 col-2 col-3 col-4 col-5 col-6 col-7 col-8 col-9 col-10 col-11 col-12" ></iframe>
+   <!-- MAP -->
+   <br><hr>
+
+   
+
+   
+   <div class="header text-center text-dark fw-bold  bg-warning " style="font-size: 40px;">Contact Form<br>
+   </div>
+   <hr>
+   
+
+
+   <!--FORM-->
+   <form>
+    
+    <form>
+    
+
+    <div class="container mt-5 pt-5 ps-5 pe-5 pb-5 mb-5 " style="background-color:goldenrod;">
+        <div class="row" >
+          <div class="col">
+            <h1>DROP US A MESSAGE</h1>
+    <span class="line"></span><br>
+         <h6>Have a question or comment? Use the form below to send us a message or contact us by mail at:</h6>
+            <label >Your Name</label><br>
+            <input type="text" id="fname" placeholder="" style="color:gray;width:56%; "><br>
+
+            <label >Your Phone</label><br>
+            <input type="number" id="phone" placeholder="" style="color:gray;width:56%; "><br>
+
+
+            <label >Your Email</label><br>
+            <input type="email" id="email" placeholder="" style="color:gray;width:56%; "><br>
+
+
+            <label >Your Comments</label><br>
+            <textarea id="message" rows="8" cols="40" placeholder="Please leave your comment here" style="font-family: serif;"></textarea><br>
+            <!-- BUTTON -->
+              <button  onclick="valid()" type="submit" id="btn"  class="bg-dark" >SUBMIT CONTACT</button>
+
+
+
+          </div>
+          &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <div class="col mt-5">
+            <h4><u>WIRELESS WORLD!</u></h4> <br>
+            <p class="text-dark" id="p1" >IF YOU HAVE AN ISSUE OR QUESTION THAT REQUIRES IMMEDIATE ASSISTANCE, YOU CAN CLICK BELOW TO CHAT LIVE WITH A CUSTOMER SERVICE REPRESENTATIVE. IF WE AREN'T AVAILABLE, DROP US AN EMAIL TO THE LEFT AND WE'LL RESPOND WITHIN 24-48 HOURS.</p>
+            <p class="text-dark" id="p2">Address: <br> <span> Saddar, Federal B Area,Gulshan View, Karachi, Lahore, Punjab, Pakistan </span>
+            </p>
+
+     <p class="text-dark" id="p3">Email: <br> Wirelessworldpk@gmail.com <br> <br>
+Call: <br> 03-111-222-333
+    </p>
+  <p class="text-dark" id="p3"> Opening Hours: <br>
+    Monday to Saturday: 11am - 11pm
+   </p>
+          </div>  
+        
+        </div>
+      </div>
+
+         <!--FORM-->
+         <!-- FOOTER -->
+<footer class="bg-dark  text-light pt-5 pb-4" style="width: 100%; height:100%;">
+  <div class="container mx-auto text-center text-md-left">
+  <div class="row  text-left text-md-left">
+   <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h5 class="text-uppercase  mb-4 fw-bold " style="color: goldenrod;">About Us</h5>
+     <p> <a class="pt-2 text-light " href="Aboutus.html" style="font-size: 12px; text-decoration: none; font-weight: 400;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About Us</a></p>
+     <p> <a class="text-light "  href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Privacy Policy</a></p>
+     <p> <a class="text-light " href="contactus.html" style="font-size: 12px; text-decoration: none; font-weight: 400; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Contact Us</a> </p>
+  </div>   
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h5 class="text-uppercase  mb-4 fw-bold " style="color: goldenrod;">Help & Support</h5>
+    <p> <a class="pt-2 text-light " href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Refund Policy</a></p>
+    <p> <a class="text-light"  href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FAQs</a></p>
+    <p> <a class="text-light " href="contactus.html" style="font-size: 12px; text-decoration: none; font-weight: 400; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Location</a> </p>
+  </div>
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+     <p class="fw-bold" style="font-size:10px;">Enter your email to receive the latest store news, special offers, exclusive discounts and other useful information</p>
+     <p> <a class="text-light "  href="#" style="font-size: 15px; text-decoration: none; font-weight: bold ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Enter your Mail
+   <i class="bi  bi-envelope " style="font-size: 23px;color:goldenrod; " id="env"></i>__________________________________</a></p>
+   <p> <a href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 25px;color:goldenrod"></i></a>
+    <a href="https://www.facebook.com"><i class="bi bi-facebook" style="font-size: 25px;color:goldenrod"></i></a>
+    <a href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 25px;color:goldenrod"></i></a>
+  </p>
+  </div>  
+
+  </div>
+
+  </div>
+
+  <hr>
+  <div class="container text-center text-md-left">
+    <div class="row  text-left text-md-left">
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    <p class="fw-lighter" style="font-size:13px;"> <span style="color: goldenrod;"> © </span> 2023 Wireless World. All Rights Reserved.</p>
+  </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <p class="fw-lighter" style="font-size:13px;"> <span  style="color: goldenrod;" class=" fw-bold "> Address:</span> Saddar, Federal B Area,Gulshan View, Karachi, Lahore, Punjab, Pakistan </p>
+    <p class="fw-lighter" style="font-size:13px;"> <span  style="color:goldenrod;" class=" fw-bold"> Email:</span>Wirelessworldpk@gmail.com </p>
+     <p class="fw-lighter" style="font-size:13px;"> <span  style="color: goldenrod;" class=" fw-bold">Phone:</span> 03-111-222-333 </p> 
+     <p class="fw-lighter" style="font-size:13px;"> <span  style="color:goldenrod;" class=" fw-bold"> Opening Hours:</span> Monday to Saturday: 11am - 11pm</p>
+    </div>
+
+    </div>
+  </div>
+ </footer>
+ <!-- footer -->
+
+
+ 
+ <script>
+ 
+  function valid()
+  {
+      var first=document.getElementById('fname').value;
+      var msg=document.getElementById('message').value;
+      var regex =/^[a-zA-Z_]{3,15}$/;
+ 
+      var email=document.getElementById('email').value;    
+      var reg =/^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$/;
+ 
+      var contact=document.getElementById('phone').value;
+      var rx = /^(\+92|0|92)[0-9]{10}$/;
+ 
+      if(first.match(regex) && email.match(reg) && msg.match(regex)
+      && contact.match(rx) && first!="" && msg!="" && email!="" && contact!="")
+      {
+          alert("Your Request Has Accepted!");
+      }
+      else
+      {
+         alert("You Entered Wrong Credentials");
+      }
+  }
+  
+  </script>
+
+</body>
+</html>

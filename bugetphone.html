@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless World</title>
+    <!-- ICON  -->
+    <link rel="ICON" href="IMG/logo.png">
+     <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<!-- ICON CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!-- aos cdn  -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+</head>
+<body>
+    <style> 
+    
+ /* NAVBAR CSS*/
+ .container-fluid {
+      margin-left: 15%;
+    }
+
+    .row {
+      --bs-gutter-x: 0rem;
+
+    }
+
+    .nav-item {
+      font-weight: bolder;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .alert-nav :hover {
+      opacity: 0.8;
+
+
+    }
+
+    .nav-item :hover {
+      opacity: 0.5;
+
+
+    }
+
+    .nav-item .dropdown-menu :hover {
+      opacity: none;
+
+    }
+
+    @media only screen and (min-width:1200px) {
+      .nav-item {
+        margin-left: 35px;
+      }
+    }
+    .nav-link:hover{
+  border-bottom: 1px solid goldenrod;
+}
+.nav-link{
+  transition: all 0.5s;
+  position: relative;  
+}
+
+    /* NAVBAR CSS*/
+
+  
+
+
+/*CARD*/
+.card .btn a{
+  padding: 5px 5px 5px;
+    background: black;
+    color:goldenrod;
+    
+}
+
+ /*CARDS 2*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'); 
+    *{margin: 0;
+      padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}   
+.wrapper .header{
+    width: 100%;
+    height: 50px;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    
+}
+.cards-wrap{
+    
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards-wrap .card-item{
+    padding: 35px 5px ;
+    width: 25%;
+
+}
+.cards-wrap .card-inner{
+    background:rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    text-align: center;
+    min-width: 225px;
+    min-height: 315px;  
+    width: 100%;
+}
+.cards-wrap .card-inner img{
+    width: 70%;
+    height:35vh;
+    margin-bottom: 5px; 
+}
+.cards-wrap .card-inner .planner-name{
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cards-wrap .card-inner .price-rs{
+    color:black;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 5px 0 10px;
+    text-align: center;
+}
+.cards-wrap .card-inner .btn{
+    align-items: center;
+    line-height: 24px;
+    text-align: center;
+    
+}
+.cards-wrap .card-inner a{
+    padding: 3px 5px;
+    color:goldenrod;
+    text-decoration: none;
+}
+.cards-wrap .card-inner a:hover{
+    outline: 5px  solid;
+}
+@media screen and (max-width:1024px)
+{ .cards-wrap .card-item{
+width: 33% ;
+}   
+}
+@media screen and (max-width:768px)
+{ .cards-wrap .card-item{
+width: 50% ;
+}
+.cards-wrap .card-inner img{
+  width:50%;
+  height: 35vh;
+}
+}
+@media screen and (max-width:568px)
+{ .cards-wrap .card-item{
+width: 80% ;
+margin-left: 10%;
+}
+}
+
+  </style>
+  
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg  navbar-light bg-dark sticky-top">
+    <div class="container-fluid ">
+      <a href="index.html"><img src="IMG/logo.png" height="60px" alt=""></a>
+
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav ">
+          <li class="nav-item   ">
+            <a class="nav-link   ps-4" style="color: silver;" href="index.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+          </a>
+          </li>
+          <a class="navbar-brand" style="color: goldenrod;" href="index.html"><i class="bi bi-house-fill"></i></a>
+          <li class="nav-item  dropdown ">
+            <a class="nav-link active dropdown ps-4" style="color: silver;" href="#" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Brands
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold" href="samsung.html">Samsung</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="apple.html">Apple</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="oppo.html">Oppo</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="Motorola.html">Motorola</a></li> <hr>
+              <li><a class="dropdown-item fw-bold" href="oneplus.html">OnePlus</a></li>
+            </ul>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="gallery.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              Gallery
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="Aboutus.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link  ps-4" style="color: silver;" href="contactus.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="" aria-expanded="false">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link ps-4 " style="color: goldenrod;" href="#"><i class="bi bi-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-4" style="color: goldenrod;" href="#"><i class="bi bi-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR -->
+    
+  <!--COROUSEL TEXT-->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner mt-3">
+      <div class="carousel-item active">
+        <p class="d-block w-100 text-center text-dark pt-2 pb-2 "
+          style="  background: goldenrod; font-size: 15px; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+          Wireless World</p>
+      </div>
+      <div class="carousel-item">
+        <p class="d-block  w-100 text-center text-dark pt-2 pb-2"
+          style=" background: goldenrod; font-size: 15px; font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Have A Smartphone & Hold Your Dreams</p>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div>
+
+  <!--COROUSEL TEXT-->
+
+    <!-- --COROUSEL -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="IMG/cover.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div><br><hr>
+
+    <!-- --COROUSEL -->
+
+    <!--CARDS-->
+    <div class="header text-center text-dark fw-bold  bg-warning " style="font-size: 40px;">Best Buget smartphone under <span class="text-danger">$: 200</span> <br>
+    </div>
+    <hr>
+    <br>
+    <div class="cards-wrap">
+      <div class="card-item">
+      <div class="card-inner">
+        <img src="IMG/mm2.png" >
+        <div  class="planner-name "> OPPO A37<br> <span style="font-size: 12px;"> 32GB Storage | 3GB RAM | Dual Sim | 8MP Camera </span>
+        </div>
+        <div class="price-rs text-danger"  style="font-size: larger;font-weight: bold; ">$: 145
+        </div>
+      <div class="btn text-light "><a href="contactus.html">BUY NOW</a>
+      </div>
+      </div>
+      </div>  
+    
+     
+    
+    
+      <div class="card-item">
+          <div class="card-inner">
+            <img src="IMG/mm1.png"  >
+            <div  class="planner-name">Samsung Galaxy A04  <br> <span style="font-size: 12px;">  4GB - 64GB | OFFICIAL PTA APPROVEDB.  </span>
+            </div>
+            <div class="price-rs text-danger " style="font-size: larger;font-weight: bold; ">$: 199
+            </div>
+          <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="IMG/mm3.png" >
+              <div  class="planner-name">
+                Motorola Z3  <br><span style="font-size: 12px;">  4GB Ram 64GB Storage | 6.0 inches Display.
+                 </span>
+              </div>
+              <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 160
+              </div>
+            <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+            </div>
+            </div>
+            </div> 
+    
+          <div class="card-item">
+              <div class="card-inner">
+                <img src="IMG/mm4.png" >
+                <div  class="planner-name">
+                  Motorola Moto G Pure <br><span style="font-size: 12px;">  32GB Storage | 3GB RAM | 4000 mAh Battery.
+                   </span>
+                </div>
+                <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 175
+                </div>
+              <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+              </div>
+              </div>
+              </div> 
+    
+    </div>
+    </div> 
+    <div class="cards-wrap">
+      <div class="card-item">
+      <div class="card-inner">
+        <img src="IMG/mm5.png" >
+        <div  class="planner-name ">Samsung Galaxy A03 <br> <span style="font-size: 12px;">  6.5" Inch Display | 4GB RAM | 64GB ROM</span>
+        </div>
+        <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 185
+        </div>
+      <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+      </div>
+      </div>
+      </div>  
+    
+    
+    
+    
+      <div class="card-item">
+          <div class="card-inner">
+            <img src="IMG/mm6.png"  >
+            <div  class="planner-name">OPPO A16e  <br> <span style="font-size: 12px;">   RAM 4GB ROM 64 GB | Camera 13MP | Battery 4230  </span>
+            </div>
+            <div class="price-rs text-danger " style="font-size: larger;font-weight: bold; ">$: 199
+            </div>
+          <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="IMG/mm7.png" >
+              <div  class="planner-name">
+                Motorola Moto G  <br><span style="font-size: 12px;">  4GB RAM 128GB ROM
+                 </span>
+              </div>
+              <div class="price-rs text-danger"  style="font-size: larger;font-weight: bold; ">$: 190
+              </div>
+            <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+            </div>
+            </div>
+            </div> 
+    
+          <div class="card-item">
+              <div class="card-inner">
+                <img src="IMG/mm8.png" >
+                <div  class="planner-name">
+                OnePlus Nord N200<br><span style="font-size: 12px;">U.S Version | 6.49" Full HD+LCD Screen 
+                   </span>
+                </div>
+                <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 169
+                </div>
+              <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+              </div>
+              </div>
+              </div> 
+    </div>
+    </div> 
+    <div class="cards-wrap">
+      <div class="card-item">
+      <div class="card-inner">
+        <img src="IMG/mm9.png" >
+        <div  class="planner-name "> OnePlus 8 Pro<br> <span style="font-size: 12px;"> Ultramarine Blue| 12GB RAM+256GB Storage. </span>
+        </div>
+        <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 130
+        </div>
+      <div class="btn text-light"><a href="#contactus.html">BUY NOW</a>
+      </div>
+      </div>
+      </div>  
+    
+    
+    
+    
+      <div class="card-item">
+          <div class="card-inner">
+            <img src="IMG/mm10.png"  >
+            <div  class="planner-name"> OnePlus  <br> <span style="font-size: 12px;">  6.28" Screen | 64GB | Mirror Black  </span>
+            </div>
+            <div class="price-rs text-danger " style="font-size: larger;font-weight: bold; ">$: 199
+            </div>
+          <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="IMG/mm11.png" >
+              <div  class="planner-name">
+                Motorola Edge   <br><span style="font-size: 12px;">8/512GB | 50MP Camera | Stardust White
+                 </span>
+              </div>
+              <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 199
+              </div>
+            <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+            </div>
+            </div>
+            </div> 
+    
+          <div class="card-item">
+              <div class="card-inner">
+                <img src="IMG/mm12.png" >
+                <div  class="planner-name">
+                  Moto G Power <br><span style="font-size: 12px;">  4/128GB | 50 MP Camera | Ice Blue
+                   </span>
+                </div>
+                <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 175
+                </div>
+              <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+              </div>
+              </div>
+              </div> 
+    </div>
+    </div> 
+    <div class="cards-wrap">
+      <div class="card-item">
+      <div class="card-inner">
+        <img src="IMG/mm13.png" >
+        <div  class="planner-name "> Moto G Play<br> <span style="font-size: 12px;">3/32GB | 13MP Camera | Blue </span>
+        </div>
+        <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 145
+        </div>
+      <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+      </div>
+      </div>
+      </div>  
+    
+    
+    
+    
+      <div class="card-item">
+          <div class="card-inner">
+            <img src="IMG/mm16.png"  >
+            <div  class="planner-name">iPhone SE <br> <span style="font-size: 12px;">  64GB White
+            </span>
+            </div>
+            <div class="price-rs text-danger" style="font-size: larger;font-weight: bold; ">$: 199
+            </div>
+          <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card-item">
+            <div class="card-inner">
+              <img src="IMG/mm14.png" >
+              <div  class="planner-name">
+                iPhone 6s <br><span style="font-size: 12px;">  64GB White
+                 </span>
+              </div>
+              <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 160
+              </div>
+            <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+            </div>
+            </div>
+            </div> 
+    
+          <div class="card-item">
+              <div class="card-inner">
+                <img src="IMG/mm15.png" >
+                <div  class="planner-name">
+                iPhone 8 <br><span style="font-size: 12px;">  64GB Storage | 4GB RAM | color black
+                   </span>
+                </div>
+                <div class="price-rs text-danger "  style="font-size: larger;font-weight: bold; ">$: 175
+                </div>
+              <div class="btn text-light"><a href="contactus.html">BUY NOW</a>
+              </div>
+              </div>
+              </div></div>
+    <div class="text-center"> <a href="gallery.html" class="btn btn-outline-dark">VIEW GALLERY</a></div> <br> 
+    </div> <br><br>
+    <!-- CARDS -->
+  
+  
+         
+<!-- FOOTER -->
+<footer class="bg-dark  text-light pt-5 pb-4" style="width: 100%; height:100%;">
+  <div class="container mx-auto text-center text-md-left">
+  <div class="row  text-left text-md-left">
+   <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h5 class="text-uppercase  mb-4 fw-bold " style="color: goldenrod;">About Us</h5>
+     <p> <a class="pt-2 text-light " href="Aboutus.html" style="font-size: 12px; text-decoration: none; font-weight: 400;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About Us</a></p>
+     <p> <a class="text-light "  href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Privacy Policy</a></p>
+     <p> <a class="text-light " href="contactus.html" style="font-size: 12px; text-decoration: none; font-weight: 400; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Contact Us</a> </p>
+  </div>   
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h5 class="text-uppercase  mb-4 fw-bold " style="color: goldenrod;">Help & Support</h5>
+    <p> <a class="pt-2 text-light " href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Refund Policy</a></p>
+    <p> <a class="text-light"  href="index.html" style="font-size: 12px; text-decoration: none; font-weight: 400 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FAQs</a></p>
+    <p> <a class="text-light " href="contactus.html" style="font-size: 12px; text-decoration: none; font-weight: 400; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Location</a> </p>
+  </div>
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+     <p class="fw-bold" style="font-size:10px; ">Enter your email to receive the latest store news, special offers, exclusive discounts and other useful information</p>
+     <p> <a class="text-light "  href="#" style="font-size: 15px; text-decoration: none; font-weight: bold ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Enter your Mail
+   <i class="bi  bi-envelope " style="font-size: 23px;color: goldenrod; " id="env"></i>__________________________________</a></p>
+   <p> <a href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 25px;color:goldenrod"></i></a>
+    <a href="https://www.facebook.com"><i class="bi bi-facebook" style="font-size: 25px;color:goldenrod"></i></a>
+    <a href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 25px;color:goldenrod"></i></a>
+  </p>
+  </div>  
+
+  </div>
+
+  </div>
+
+  <hr>
+  <div class="container text-center text-md-left">
+    <div class="row  text-left text-md-left">
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    <p class="fw-lighter" style="font-size:13px;"> <span style="color: goldenrod;"> © </span> 2023 Wireless World. All Rights Reserved.</p>
+  </div>
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <p class="fw-lighter" style="font-size:13px;"> <span  style="color:goldenrod;" class=" fw-bold "> Address:</span> Saddar, Federal B Area,Gulshan View, Karachi, Lahore, Punjab, Pakistan </p>
+    <p class="fw-lighter" style="font-size:13px;"> <span  style="color:goldenrod;" class=" fw-bold"> Email:</span>Wirelessworldpk@gmail.com </p>
+     <p class="fw-lighter" style="font-size:13px;"> <span  style="color: goldenrod;" class=" fw-bold">Phone:</span> 03-111-222-333 </p> 
+     <p class="fw-lighter" style="font-size:13px;"> <span  style="color: goldenrod;" class=" fw-bold"> Opening Hours:</span> Monday to Saturday: 11am - 11pm</p>
+    </div>
+
+    </div>
+  </div>
+ </footer>
+ <!-- footer -->
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
